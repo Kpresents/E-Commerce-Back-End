@@ -6,7 +6,18 @@ class Category extends Model {}
 
 Category.init(
   {
-    // define columns
+    // define columns- is this correct? 
+    id: {
+      type: DataTypes.INTEGER,
+      primaryKey: true,
+      allowNull: false,
+      autoIncrement: true
+
+    }, 
+    category_name:{
+      type: DataTypes.STRING,
+      allowNull: false,
+    }
   },
   {
     sequelize,
